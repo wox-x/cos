@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>lightgallery.js示例</title>
+<link href="https://lf6-cdn-tos.bytecdntp.com/cdn/expire-1-M/lightgallery-js/1.4.0/css/lg-fb-comment-box.min.css" type="text/css" rel="stylesheet" />
+<link href="https://lf6-cdn-tos.bytecdntp.com/cdn/expire-1-M/lightgallery-js/1.4.0/css/lg-transitions.min.css" type="text/css" rel="stylesheet" />
+<link href="https://lf3-cdn-tos.bytecdntp.com/cdn/expire-1-M/lightgallery-js/1.4.0/css/lightgallery.min.css" type="text/css" rel="stylesheet" />
+</head>
+<body>
+<div id="lightgallery"> 
+<a href="https://cdn.pixabay.com/photo/2020/06/20/11/09/cat-5320572_1280.jpg"> <img src="https://cdn.pixabay.com/photo/2020/06/20/11/09/cat-5320572_640.jpg" alt="Image 1"> </a> 
+<a href="https://cdn.pixabay.com/photo/2023/10/23/17/39/landscape-8336550_1280.jpg"> <img src="https://cdn.pixabay.com/photo/2023/10/23/17/39/landscape-8336550_640.jpg" alt="Image 2"> </a> 
+<a href="https://cdn.pixabay.com/photo/2022/12/05/22/08/open-book-7637805_960_720.jpg"> <img src="https://cdn.pixabay.com/photo/2022/12/05/22/08/open-book-7637805_640.jpg" alt="Image 3"> </a> 
+<a href="https://cdn.pixabay.com/photo/2024/03/02/09/17/lofoten-8608176_1280.jpg"> <img src="https://cdn.pixabay.com/photo/2024/03/02/09/17/lofoten-8608176_640.jpg" alt="Image 4"> </a> 
+<a href="https://cdn.pixabay.com/photo/2023/10/30/07/03/owl-8351984_1280.jpg"> <img src="https://cdn.pixabay.com/photo/2023/10/30/07/03/owl-8351984_640.jpg" alt="Image 5"> </a> 
+<a href="https://cdn.pixabay.com/photo/2023/11/05/00/05/terrace-8366036_1280.jpg"> <img src="https://cdn.pixabay.com/photo/2023/11/05/00/05/terrace-8366036_640.jpg" alt="Image 6"> </a>  
+</div>
+<script src="https://lf6-cdn-tos.bytecdntp.com/cdn/expire-1-M/lightgallery-js/1.4.0/js/lightgallery.min.js" type="application/javascript"></script> 
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        lightGallery(document.getElementById('lightgallery'), {
+            speed: 1000, // 切换速度 毫秒
+            mode: 'lg-slide', // lg-fade淡入淡出，lg-slide左右切换
+            download: false, // 不允许下载图像
+        });
+    });
+</script>
+</body>
+</html>
