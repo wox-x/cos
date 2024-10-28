@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Fancybox V5示例</title>
+<link rel="stylesheet" href="https://oss.cdnjs.vip/fancybox-ui@5.0.36/dist/fancybox/fancybox.css" />
+</head>
+<body>
+<div id="fancybox"> 
+	<a href="https://cdn.pixabay.com/photo/2020/06/20/11/09/cat-5320572_1280.jpg" data-fancybox="gallery" data-caption="Image 1"> <img src="https://cdn.pixabay.com/photo/2020/06/20/11/09/cat-5320572_640.jpg" alt="Image 1" /> </a> 
+	<a href="https://cdn.pixabay.com/photo/2023/10/23/17/39/landscape-8336550_1280.jpg" data-fancybox="gallery" data-caption="Image 2"> <img src="https://cdn.pixabay.com/photo/2023/10/23/17/39/landscape-8336550_640.jpg" alt="Image 2" /> </a> 
+	<a href="https://cdn.pixabay.com/photo/2022/12/05/22/08/open-book-7637805_960_720.jpg" data-fancybox="gallery" data-caption="Image 3"> <img src="https://cdn.pixabay.com/photo/2022/12/05/22/08/open-book-7637805_640.jpg" alt="Image 3" /> </a> 
+	<a href="https://cdn.pixabay.com/photo/2024/03/02/09/17/lofoten-8608176_1280.jpg" data-fancybox="gallery" data-caption="Image 4"> <img src="https://cdn.pixabay.com/photo/2024/03/02/09/17/lofoten-8608176_640.jpg" alt="Image 4" /> </a> 
+	<a href="https://cdn.pixabay.com/photo/2023/10/30/07/03/owl-8351984_1280.jpg" data-fancybox="gallery" data-caption="Image 5"> <img src="https://cdn.pixabay.com/photo/2023/10/30/07/03/owl-8351984_640.jpg" alt="Image 5" /> </a> 
+	<a href="https://cdn.pixabay.com/photo/2023/11/05/00/05/terrace-8366036_1280.jpg" data-fancybox="gallery" data-caption="Image 6"> <img src="https://cdn.pixabay.com/photo/2023/11/05/00/05/terrace-8366036_640.jpg" alt="Image 6" /> </a> 
+</div>
+<script src="https://oss.cdnjs.vip/fancybox-ui@5.0.36/dist/fancybox/fancybox.umd.js"></script>
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        const options = {
+            Thumbs: {
+                type: "classic",
+            },
+            Toolbar: {
+                display: {
+                    left: ["infobar"],
+                    middle: [
+                        "zoomIn",
+                        "zoomOut",
+                        "toggle1to1",
+                        "rotateCCW",
+                        "rotateCW",
+                        "flipX",
+                        "flipY",
+                    ],
+                    right: ["slideshow", "thumbs", "close"],
+                },
+            },
+        };
+        Fancybox.bind('[data-fancybox="gallery"]', options);
+    });
+</script>
+</body>
+</html>
